@@ -1,1 +1,12 @@
 /* Be able to style out the page that is needed to be shown on the page*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make the Page so that it is dark mode */
+body{
+    background: #080808;
+    color:#fff; 
+}
