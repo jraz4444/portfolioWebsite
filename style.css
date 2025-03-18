@@ -96,13 +96,15 @@ nav ul li a:hover::after {
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+    display: inline-block;
+    position: relative;
 }
 
 .tab-links::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #1aff00;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -111,4 +113,23 @@ nav ul li a:hover::after {
 
 .tab-links.active-link::after{
     width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 16px; /* Slightly larger text */
+}
+
+.tab-contents h3 span{
+    color: #ff0000;
+    font-size: 24px;
+}
+
+.tabs-contents{
+    display: none;
+}
+
+.tabs-contents.active-tab{
+    display: block;
 }

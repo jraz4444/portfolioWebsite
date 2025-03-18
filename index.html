@@ -1,4 +1,3 @@
-<!-- Just be able to layout the page for the home page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,42 +7,94 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div div id ="header">
-    <div class = "container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="users.php">Users</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Software Student</p>
-            <h1>Hi, I'm <span>Jonathan</span><br></h1>
-        </div>
-        <div id ="about"
-        <div class ="container">
-            <div class ="about-col-1">
-
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="users.php">Users</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Student</p>
+                <h1>Hi, I'm <span>Jonathan</span><br></h1>
             </div>
-            <div class = "about-col-2">
-            <h1 class ="sub-title">About Me</h1>
-            <p>My name is Jonathan and I am a student at the University of Regina. I am currently studying Software Systems Engineering. I am a very passionate individual who is always looking to learn new things
         </div>
+    </div>
 
-        <div class ="tab-titles">
-            <p class ="tab-links active-link">Skills</p>
-            <p class ="tab-links">Experience</p>
-            <p class ="tab-links">Education</p>
+    <div id="about">
+        <div class="container">
+            <div class="about-col-1"></div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Jonathan and I am a student at the University of Regina. I am currently studying Software Systems Engineering. I am a very passionate individual who is always looking to learn new things.</p>
+            </div>
 
-        </div>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            
+            <div class="tab-contents">
+                <div class="tab-contents active-tab" id="skills">
+                    <h3><span>Programming Languages</span></h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>JavaScript</li>
+                        <li>HTML & CSS</li>
+                        <li>Flex + Bison</li>
+                        <li>XML</li>
+                        <li>Java</li>
+                        <li>C++ / C# / C</li>
+                    </ul>
+                </div>
+            
+                <div class="tab-content" id="experience">
+                    <h3><span>Machine Learning & Data Science</span></h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+            
+                <div class="tab-content" id="education">
+                    <h3><span>Software & Framework</span></h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>VSCode</li>
+                        <li>Bash Script</li>
+                        <li>Python Script</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents"); // Fixed class to 'tab-content'
+                
+                function opentab(tabname) {
+                    // Remove active-link from all tab links
+                    for (var tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+            
+                    // Remove active-tab from all tab contents
+                    for (var tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab");
+                    }
+            
+                    // Add active-link to the clicked tab
+                    document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
+            
+                    // Add active-tab to the corresponding tab content
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+                
 
-        <div class ="tab-contents">
-           <ul>
-            <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
-            <li><span>Web Development</span><br>Designing Web App Interfaces</li>
-            <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
+           </script>
+            
 
-           </ul> 
-        </div>
-</body>
+
+        </body>
 </html>
