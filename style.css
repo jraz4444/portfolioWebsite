@@ -269,6 +269,67 @@ nav ul li a:hover::after {
     background: #ff004f;
     color: #fff;
 }
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    background: linear-gradient(45deg, #ff004f, #ff7a7a); /* Adds a gradient background */
+    color: #fff; /* White text color */
+    font-size: 16px; /* Slightly larger text */
+    font-weight: 600; /* Makes the text bold */
+    text-align: center; /* Centers the text */
+    text-decoration: none; /* Removes underline from links */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #ff7a7a, #ff004f); /* Inverts the gradient on hover */
+    transform: translateY(-5px); /* Gives a lifting effect on hover */
+    box-shadow: 0 4px 15px rgba(255, 0, 79, 0.3); /* Adds shadow for a 3D effect */
+}
+
+.btn:active {
+    transform: translateY(0); /* Returns to the original position when clicked */
+    box-shadow: none; /* Removes shadow when clicked */
+}
+
+/* Contact Section */
+.contact-left {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    gap: 10px; /* Space between each row */
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.contact-info i {
+    color: #ff0000;
+    font-size: 25px;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-info i {
+    color: #ff0000; /* Default color */
+    font-size: 25px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.contact-info i:hover {
+    color: #0073b1; /* Change color on hover (LinkedIn blue) */
+    transform: scale(1.2); /* Slightly enlarge the icon */
+}
 
 
 /* Responsive Design */
