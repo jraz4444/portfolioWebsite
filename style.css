@@ -331,7 +331,41 @@ nav ul li a:hover::after {
     transform: scale(1.2); /* Slightly enlarge the icon */
 }
 
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
 
+.contact-right form{
+    width:100%;
+}
+
+form input,form textarea{
+    width: 100%;
+    border:0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.copyright{
+    text-align: center;
+    padding: 20px 0;
+    background: #262626;
+    color: #fff;
+}
+
+.copyright i{
+    color:#ff0000
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -359,5 +393,40 @@ nav ul li a:hover::after {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+}
+
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url();
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    nav .fas{
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right:0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
     }
 }
