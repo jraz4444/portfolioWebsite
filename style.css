@@ -132,6 +132,10 @@ nav ul li a:hover::after {
     color: #ff0000;
     font-size: 24px;
 }
+.tab-content h3 span {
+    color: #ff0000;
+    font-size: 24px;
+}
 
 .tab-contents {
     display: none;

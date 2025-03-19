@@ -36,7 +36,6 @@
                 <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
             
-            <div class="tab-contents">
                 <div class="tab-contents active-tab" id="skills">
                     <h3><span>Programming Languages</span></h3>
                     <ul>
@@ -50,7 +49,7 @@
                     </ul>
                 </div>
             
-                <div class="tab-content" id="experience">
+                <div class="tab-content" id="education">
                     <h3><span>Machine Learning & Data Science</span></h3>
                     <ul>
                         <li>Python</li>
@@ -58,7 +57,7 @@
                     </ul>
                 </div>
             
-                <div class="tab-content" id="education">
+                <div class="tab-content" id="experience">
                     <h3><span>Software & Framework</span></h3>
                     <ul>
                         <li>Git</li>
@@ -70,22 +69,27 @@
             </div>
             
             <script>
-                var tablinks = document.getElementsByClassName("tab-links");
-                var tabcontents = document.getElementsByClassName("tab-contents"); // Fixed class to 'tab-content'
-                function opentab(tabname) {
-                    // Remove active-link from all tab links
-                    for (var tablink of tablinks) {
-                        tablink.classList.remove("active-link");
-                    }
-                    // Remove active-tab from all tab contents
-                    for (var tabcontent of tabcontents) {
-                        tabcontent.classList.remove("active-tab");
-                    }
-                    // Add active-link to the clicked tab
-                    document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
-                    // Add active-tab to the corresponding tab content
-                    document.getElementById(tabname).classList.add("active-tab");
-                }
+               function opentab(tabname) {
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    // Remove active-link from all tab links
+    for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+
+    // Remove active-content from all tab contents
+    for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-content");
+    }
+
+    // Add active-link to the clicked tab
+    document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
+
+    // Add active-content to the corresponding tab content
+    document.getElementById(tabname).classList.add("active-content");
+}
+
            </script>
         </body>
 </html>
