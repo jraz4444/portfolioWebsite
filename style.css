@@ -150,12 +150,13 @@ nav ul li a:hover::after {
     padding: 30px 0;
 }
 
-.service h3{
+.service h3 {
     display: grid;
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center; /* Center the title text */
 }
+
 .service {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(5px, 1fr)); /* Adjusts items to fit the space with a minimum width */
@@ -163,6 +164,37 @@ nav ul li a:hover::after {
     margin-top: 50px;
 }
 
+.services div {
+    background: #262626;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px solid #fff;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services div h3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.services div i{
+    color: #fff;
+}
+
+.services div a{
+    color: #fff;
+}
+
+.services div:hover{
+    color: #ff004f;
+    transform: translateY(-10px);
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
