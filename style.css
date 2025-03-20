@@ -441,4 +441,8 @@ nav .fas{
         right: 25px;
         cursor: pointer;
     }
+
+    html{
+        scroll-behavior: smooth;
+    }
 }
