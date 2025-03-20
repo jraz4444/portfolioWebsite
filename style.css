@@ -445,4 +445,13 @@ nav .fas{
     html{
         scroll-behavior: smooth;
     }
+
+    
+}
+
+#msg{
+    color:#61b752;
+    margin-top: -10px;
+    display: block;
+
 }
