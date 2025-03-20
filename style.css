@@ -75,11 +75,13 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 0%;
     font-size: 24px;
+    margin-bottom: 50px; /* Adds space before the next section */
+    padding-bottom: 50px; 
 }
 
 .header-text h1 {
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 300px;
 }
 
 .header-text h1 span {
@@ -309,7 +311,10 @@ nav ul li a:hover::after {
     display: flex;
     align-items: center;
     gap: 10px; /* Space between icon and text */
+    background-image: url('WhatsApp\ Image\ 2025-03-20\ at\ 13.14.39.jpeg'); /* Replace with your image path */
+    
 }
+
 
 .contact-info i {
     color: #ff0000;
@@ -455,3 +460,20 @@ nav .fas{
     display: block;
 
 }
+
+#contact {
+    background-image: url('WhatsApp\ Image\ 2025-03-20\ at\ 13.14.39.jpeg'); /* Replace with your image path */
+    background-size: 300px 300px; /* Set the width and height */
+    background-repeat: no-repeat;
+    background-position: top right; /* Adjust positioning */
+}
+
+
+#header{
+    background-image: url('WhatsApp\ Image\ 2025-03-20\ at\ 13.29.09.jpeg'); /* Replace with your image path */
+    background-size: 300px 350px; /* Set the width and height */
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+
