@@ -477,3 +477,12 @@ nav .fas{
 
 }
 
+#about h1, #about h2, #about h3 {
+    color: red; /* Sets the text color of all headings to red */
+    text-align: left; /* Aligns the text to the left */
+    margin-left: 0; /* Ensures there's no extra margin on the left side */
+}
+
+.about-col-2 ul li strong {
+    color: red; /* Sets the <strong> text inside list items to red */
+}
