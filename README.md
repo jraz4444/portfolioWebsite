@@ -65,5 +65,5 @@ This project is licensed under the MIT License.
 
 Contact
 
-For any inquiries, reach out via the contact form on the website or email at your.email@example.com.
+For any inquiries, reach out via the contact form on the website or email at jraz4444@gmail.com.
 
